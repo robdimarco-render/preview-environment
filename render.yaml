@@ -4,7 +4,7 @@ services:
 - type: web
   plan: standard
   previewPlan: starter
-  name: express-backend
+  name: robdimarco-express-backend
   env: node
   buildCommand: cd backend && yarn
   startCommand: cd backend && yarn start
@@ -17,7 +17,7 @@ services:
       name: postgres_db
       property: connectionString
 - type: web
-  name: render-todo
+  name: robdimarco-render-todo
   env: static
   buildCommand: cd frontend && yarn install && yarn build
   staticPublishPath: ./frontend/build
@@ -28,13 +28,13 @@ services:
       name: express-backend
       property: host
 - type: pserv
-  name: memcached
+  name: robdimarco-memcached
   env: image
   image:
     url: memcached
 databases:
 - name: postgres_db
-  databaseName: test_db
+  databaseName: robdimarco_test_db
   user: test_user
   plan: standard
   previewPlan: starter
