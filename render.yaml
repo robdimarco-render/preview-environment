@@ -32,7 +32,7 @@ services:
   name: robdimarco-memcached
   env: image
   image:
-    url: memcached
+    url: memcached:1.6.19
 databases:
 - name: robdimarco_postgres_db
   databaseName: test_db
