@@ -27,6 +27,7 @@ services:
       type: web
       name: robdimarco-express-backend
       property: host
+# This is an example of an image
 - type: pserv
   name: robdimarco-memcached
   env: image
