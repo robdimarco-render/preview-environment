@@ -27,6 +27,7 @@ services:
       type: web
       name: express-backend
       property: host
+# This is an example of an image
 - type: pserv
   name: memcached
   env: image
